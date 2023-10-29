@@ -31,11 +31,11 @@ let lives = 4;
 function makeZombie(){
     let zombie = document.createElement("img");
     let zomImg = zombieImages[getRandomint(0,zombieImages.length )]
-    zombie.src = ./assets/${zomImg};                    // getting random imagesv of zombie
+    zombie.src = `./assets/${zomImg}`;                    // getting random imagesv of zombie
     zombie.classList.add("zombie-image");
-    zombie.id = zombie${zombieId};
-    zombie.style.transform = translateX(${getRandomint(10,90)}vw);         // for changing
-    zombie.style.animationDuration = ${getRandomint(2,6)}s 
+    zombie.id = `zombie${zombieId}`;
+    zombie.style.transform = `translateX(${getRandomint(10,90)}vw)`;         // for changing
+    zombie.style.animationDuration = `${getRandomint(2,6)}s`; 
     gameBody.append(zombie)
 
     zombie.onclick = () => {
